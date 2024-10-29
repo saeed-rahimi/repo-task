@@ -5,8 +5,6 @@ const  cartItems=[
     {name:"Socks" ,quantity:3},
   
 ]
-
-
 cartItems.forEach(item => {
 
     const { 
@@ -19,9 +17,7 @@ cartItems.forEach(item => {
         price: item.price ?? 10
     };
     
- 
     const totalCost = quantity * price;
-    
     
     console.log(`Item: ${name}, Quantity: ${quantity}, Price: ${price}, Total Cost: ${totalCost}`);
 });
